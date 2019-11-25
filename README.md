@@ -1,7 +1,3 @@
-## (unmaintained) Check out the new date picker: [Litepicker](https://github.com/wakirin/Litepicker)
-  
----  
-  
 [![npm version](https://badge.fury.io/js/lightpick.svg)](https://www.npmjs.com/package/lightpick) [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/wakirin/lightpick/blob/master/LICENSE)
 
 
