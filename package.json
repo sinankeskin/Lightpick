@@ -1,5 +1,5 @@
 {
-  "name": "lightpick",
+  "name": "@khons/lightpick",
   "version": "1.5.0",
   "description": "Javascript date range picker - lightweight, no jQuery",
   "main": "lightpick.js",
