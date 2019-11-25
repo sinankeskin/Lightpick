@@ -1471,10 +1471,6 @@
         if (typeof this._opts.onOpen === 'function') {
           this._opts.onOpen.call(this);
         }
-
-        if (document.activeElement && document.activeElement != document.body) {
-          document.activeElement.blur();
-        }
       }
     },
 
