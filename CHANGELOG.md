@@ -1,6 +1,9 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+[1.6.0] - 2020-01-23
+* Change month title bar tag header to div
+
 [1.5.0] - 2019-11-12
 * All getX methods returns clone dates now - PR #75 - Thanks @StevenGastroSophy
 

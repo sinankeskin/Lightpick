@@ -428,7 +428,7 @@
         var day = moment(monthDate);
 
         html += '<section class="lightpick__month">';
-        html += '<header class="lightpick__month-title-bar">';
+        html += '<div class="lightpick__month-title-bar">';
         html +=
           '<div class="lightpick__month-title">' +
           renderMonthsList(day, opts) +
@@ -439,7 +439,7 @@
           html += renderTopButtons(opts, 'days');
         }
 
-        html += '</header>'; // lightpick__month-title-bar
+        html += '</div>'; // lightpick__month-title-bar
 
         html += '<div class="lightpick__days-of-the-week">';
         for (var w = opts.firstDay + 4; w < 7 + opts.firstDay + 4; ++w) {
