@@ -275,19 +275,19 @@ Dropdown selections for years, months. Can be `false` for disable both dropdowns
 - Type: `Function`
 - Default: `null`
 
-Callback function for when a date is selected.
+Callback function for when a date is selected. Will return the start date (when singleDate=true or not set), or both the start and end dates (when singleDate=false). This will be called every time `setDate()` or `setDateRange()` is used unless the third boolean argument on those functions is set to `true`.
 
 ### onSelectStart
 - Type: `Function`
 - Default: `null`
 
-Callback function for when a start date is selected (only when singleDate=false).
+Callback function for when a start date is selected (only when singleDate=false). Will return the start date only.
 
 ### onSelectEnd
 - Type: `Function`
 - Default: `null`
 
-Callback function for when a end date is selected (only when singleDate=false).
+Callback function for when a end date is selected (only when singleDate=false). Will return the end date only.
 
 ### onOpen
 - Type: `Function`
@@ -324,15 +324,17 @@ Callback function for when the years select is changed.
 
 * * *
 
-### picker.setDate(date)
+### picker.setDate(date, preventOnSelect)
 
 Set date when singleDate is true. `date` can be moment, string, number, date.  
+Optional argument `preventOnSelect` (boolean) is set to `false` by default. Setting it to `true` will prevent the picker from calling it's `onSelect` function.
 Eg. `picker.setDate(new Date());`
 
   
-### picker.setDateRange(start, end)
+### picker.setDateRange(start, end, preventOnSelect)
 
 Set date range. <code>start, end</code> can be moment, string, number, date. 
+Optional argument `preventOnSelect` (boolean) is set to `false` by default. Setting it to `true` will prevent the picker from calling it's `onSelect` function.
 Eg. `picker.setDateRange(new Date(), moment().add(7, 'day'));`
   
 
