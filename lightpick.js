@@ -1459,7 +1459,7 @@
         ) {
           this.gotoDate(this._opts.endDate);
         } else {
-          this.gotoDate(this._opts.startDate);
+          this.gotoDate(this._opts.startDate || this._opts.minDate);
         }
 
         document.addEventListener('mousedown', this._onClick);
