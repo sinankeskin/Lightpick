@@ -5,6 +5,8 @@
 Lightpick
 =========
 
+# WARNING: Unmaintained in favor of [Litepicker](https://github.com/wakirin/Litepicker)
+
 Javascript date range picker - lightweight, no jQuery
 -----------------------------------------------------
 
